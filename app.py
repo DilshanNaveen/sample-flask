@@ -7,3 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return render_template("index.html")
+
+@app.route("/api")
+def map():
+    return "ado map"
